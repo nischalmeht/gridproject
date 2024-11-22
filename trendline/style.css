@@ -114,3 +114,29 @@ padding: 50px;
     background-color: transparent;
     /* height: 7px; */
 }
+
+@media (max-width:700px) {
+    #nav{
+        height: 80px;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    padding: 50px;
+    }
+    #nav-part1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+    .gola{
+        height: 22px;
+        width: 22px;
+        background-color: #000;
+        border-radius: 50%;
+        /* padding-left: 40px; */
+    }
+    
+}
