@@ -107,3 +107,193 @@ html body{
     align-items: center;
     padding-top: 1vw;
   }
+  #scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0 10px;
+    
+  }
+  #scroll img{
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    width: 15%;
+    margin: 2em;
+  }
+  #container{
+    height: 100%;
+    width: 110%;
+    display: inline-block;
+    /* padding: 1vw; */
+    animation-name: anima;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes anima {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+    
+  }
+
+  #alphabet{
+    height: 10vh;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  #alphabet h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.7vw;
+    border-bottom: 2px solid #000;
+    font-style: italic;
+    letter-spacing: 4px;
+    
+    /* font-weight: 400; */
+
+
+  }
+  #alphabet h6{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1vw;
+    border-bottom: 2px solid #000;
+    font-style: italic;
+    letter-spacing: 4px;
+    /* background-color: rgb(251, 251, 0); */
+    padding: 0.6vw 0.8vw;
+    border-radius: 50%;
+    cursor: pointer;
+    /* border: 2px solid #000; */
+    /* font-weight: 400; */
+
+
+  }
+  #alphabet h6 :hover{
+    border:1px solid #000;
+    
+  }
+  #page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+  }
+
+  #page2-part1 {
+    height: 100%;
+    width: 40%;
+    /* background-image: url("https://images.unsplash.com/photo-1500336624523-d727130c3328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixclass=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  }
+  #page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+    /* background-color: red; */
+  }
+  #page3>h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3vw;
+    font-family: monument;
+    text-transform: uppercase;
+  }
+  .elem{
+    height: 16vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    position: relative;
+  }
+  .elem .elem-part2{
+    width:45%;
+  }
+  .elem img{
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left: 15%;
+    opacity: 0;
+    transition: all ease 0.7s;
+    object-position: top;
+    object-fit: cover;
+  }
+  .elem-part2 h5{
+    font-size: 1vw;
+    font-size: 600;
+    text-transform: uppercase;
+  }
+  .elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+  }
+  .elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+  }
+  .elem:hover img{
+    opacity: 1;
+    left: 30%;
+  }
+  #footer{
+    height: 100%;
+    width: 100%;
+  }
+  #marque{
+    /* height: 20vh; */
+    /* background-color: red; */
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  #marque h1{
+    display: inline-block;
+    font-size: 4vw;
+    text-transform: 900;
+    -webkit-text-stroke: 2px black;
+  color: transparent;
+  letter-spacing: 2px;
+  margin-right: 16px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count:infinite ;
+  animation-timing-function: linear;
+
+  }
+  @keyframes move {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
