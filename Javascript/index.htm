@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name">
+            <button><img src="images/search.png" alt="" srcset=""></button>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="" srcset="">
+                    <div>
+                        <p class="humidity">50%</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="" srcset="">
+                    <div>
+                        <p class="wind">Wind</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const apiKey = "1ad0ceb4f71842312696d1af59415257";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weatherunits=metric&q=bangalore";
+
+        async function checkWeather() {
+            const response = await fetch (apiUrl + `&appid=${apiKey}`);
+            // const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            let data = await response.json()
+            console.log(data)
+        }
+        checkWeather()
+    </script>
+    <!-- <script src="script.js"></script> -->
+    <!-- <link rel="stylesheet" href="script.js"> -->
+</body>
+
+</html>
